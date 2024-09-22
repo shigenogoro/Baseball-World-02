@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    padding-block: 0;
+    background-image: url("./picture/baseball_field2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#landing-guide {
+    background-color: rgba(99, 97, 97, 0.7);
+    text-align: center;
+    width: 40%;
+    margin-left: 860px;
+    position: relative;
+    top: 300px;
+    padding: 1rem;
+}
+
+#page-title {
+    font-size: 1.7rem;
+}
+
+#page-subtitle {
+    font-size: 1.25rem;
+}
