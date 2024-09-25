@@ -25,22 +25,18 @@ const renderPlayers = async () => {
             // Create the player info for the card
             const cardTitle = document.createElement('h3')
             cardTitle.textContent = `${player.name}`
-            cardTitle.className = 'card-text'
             bottomContainer.appendChild(cardTitle)
 
             // Create the intro for the card
-            player.teams.map(team => {
-                const cardIntro = document.createElement('p')
-                cardIntro.textContent = `${team}`
-                cardIntro.className = 'card-text'
-                bottomContainer.appendChild(cardIntro)
-            })
+            const cardIntro = document.createElement('p')
+            cardIntro.textContent = `${player.teams}`
+            bottomContainer.appendChild(cardIntro)
 
             // Create the a tag for detail page
             const detailLink = document.createElement('a')
             detailLink.textContent = 'Read More >'
+            detailLink.setAttribute('role', 'button')
             detailLink.href = `/players/${player.id}`
-            detailLink.id = 'detail-link'
             bottomContainer.appendChild(detailLink)
 
             // Append topContainer and bottomContainer to the card

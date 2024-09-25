@@ -7,11 +7,9 @@ const headerRight = document.createElement('div')
 headerRight.className = 'header-right'
 
 const headerTitle = document.createElement('h1')
-headerTitle.id = 'page-title'
 headerTitle.textContent = 'Welcome to the Baseball World!!!'
 
 const headerSubtitle = document.createElement('h2')
-headerSubtitle.id = 'page-subtitle'
 headerSubtitle.textContent = 'View players information in the below section.'
 
 const viewButton = document.createElement('button')
