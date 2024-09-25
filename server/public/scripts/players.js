@@ -20,7 +20,6 @@ const renderPlayers = async () => {
 
             // Set the background image of the top-container element to the player's image
             topContainer.style.backgroundImage = `url(${player.image})`
-            console.log(player.image)
 
             // Create the player info for the card
             const cardTitle = document.createElement('h3')
@@ -28,15 +27,17 @@ const renderPlayers = async () => {
             bottomContainer.appendChild(cardTitle)
 
             // Create the intro for the card
-            const cardIntro = document.createElement('p')
-            cardIntro.textContent = `${player.teams}`
-            bottomContainer.appendChild(cardIntro)
+            player.teams.map(team => {
+                const cardIntro = document.createElement('p')
+                cardIntro.textContent = `${team}`
+                bottomContainer.appendChild(cardIntro)
+            })
 
             // Create the a tag for detail page
             const detailLink = document.createElement('a')
             detailLink.textContent = 'Read More >'
-            detailLink.setAttribute('role', 'button')
             detailLink.href = `/players/${player.id}`
+            detailLink.id = 'detail-link'
             bottomContainer.appendChild(detailLink)
 
             // Append topContainer and bottomContainer to the card

@@ -5,6 +5,10 @@
     color: black;
 }
 
+h1, h2, h3, p {
+    color: black;
+}
+
 /* Header CSS */
 header {
     height: 100vh;
@@ -50,10 +54,12 @@ header {
 
 #page-title {
     font-size: 1.7rem;
+    color: white;
 }
 
 #page-subtitle {
     font-size: 1.25rem;
+    color: white;
 }
 
 /* Home page CSS */
@@ -110,10 +116,6 @@ main {
     text-decoration: none;
 }
 
-.card-text {
-    color: black;
-}
-
 /* 404 Page CSS */
 
 .fof-container{
@@ -144,8 +146,13 @@ main {
 
 /* Detail Page CSS*/
 
-.gift-info {
+#name {
+    margin-bottom: 30px;
+}
+
+.player-info {
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: row;
 }
 
@@ -155,9 +162,9 @@ main {
 }
 
 .image-container img {
-    width: 80%;
+    width: 70%;
 }
 
-.gift-details {
+.player-details {
     width: 45vw;
 }

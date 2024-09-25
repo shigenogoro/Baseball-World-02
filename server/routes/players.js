@@ -24,7 +24,7 @@ router.get('/', (req, res) => {
  */
 
 router.get('/:playerId', (req, res) => {
-    res.status(200).sendFile(path.resolve(__dirname, '../public/gift.html'))
+    res.status(200).sendFile(path.resolve(__dirname, '../public/player.html'))
 })
 
 export default router

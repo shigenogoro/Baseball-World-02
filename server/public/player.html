@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- Icon -->
-    <link rel="icon" href="./picture/baseball.jpg"/>
+    <link rel="icon" href="/picture/baseball.jpg"/>
 
     <!-- PicoCSS -->
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-    >
+    >
+    <link 
+        rel="stylesheet"
+        href="./../style.css"
+    >
 
     <title>Baseball World</title>
 
     <!-- Scripts to Generate Content -->
     <script defer src="/scripts/header.js"></script>
-    <script defer src="/scripts/players.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Cr0u6zvz.css">
+    <script defer src="/scripts/player.js"></script>
+
 </head>
 <body>
     <header></header>
-    <main id="main-content"></main>
+    <main id="player-content" class="player-info" >
+        <div class="image-container">
+            <img id="image" src="" />
+        </div>
+
+        <div class="player-details">
+            <h2 id="name"></h2>
+            <p id="description"></p>
+        </div>
+
+    </main>
 </body>
 </html>
