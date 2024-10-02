@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![]( https://github.com/shigenogoro/Baseball-World-02/codepath_assignment2.gif)
+<img src='https://submissions.us-east-1.linodeobjects.com/web103/Fze_B_m5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LICEcap
